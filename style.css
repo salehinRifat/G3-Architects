@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+.menu-container{
+    padding: 20px 130px;
+    background: rgba(255, 144, 14, 0.10);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    color: #131313;
+    font-weight: 700;
+    font-size: 2rem;
+}
+nav ul{
+    display: flex;
+
+}
+nav ul li{
+    list-style: none;
+    margin-right: 20px;
+    color: #424242;
+    font-size: 1.1rem;
+}
+.banner{
+    padding: 20px 130px;
+    background: rgba(255, 144, 14, 0.10)
+}
+.banner-img{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.banner-img img{
+    width: 100%;
+}
+.banner-content{
+    text-align: center;
+    padding: 50px 100px;
+}
+.banner-title{
+    color: #131313;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+.banner-text{
+    color:  #727272;
+    line-height: 1.5rem;
+    margin-bottom: 20px;
+}
+.btn-primary{
+    padding: 15px 25px;
+    border-radius: 8px;
+    background: #FF900E;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.features-container{
+    display: flex;
+    padding: 50px 130px;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.feature-img{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.feature-img img{
+    width: 200px;
+}
+.feature-content{
+    margin-left: 20px;
+}
+.feature-content h1{
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #131313;
+    font-weight: 700;
+}
+.feature-style1{
+    color: #727272;
+}
+.feature-style2{
+    color: #FF900E;
+}
+.feature-content button{
+    margin-top: 20px;
+}
+.feature-content p{
+    color: #727272;
+}
+
+
+
+
+/* Resposive designs */
+@media screen and (max-width:576px){
+    .menu-container,.features-container{
+        flex-direction: column;
+        padding:20px;
+    }
+    .feature-img img{
+        width: 180px;
+    }
+    nav ul{
+        margin-top: 10px;
+    }
+    .banner{
+        padding: 20px;
+    }
+    .banner-content{
+        padding: 0;
+    }
+    .btn-primary{
+        margin-bottom: 10px;
+    }
+}
+@media screen and (min-width:576px) and (max-width:768px){
+    .menu-container{
+        flex-direction: row;
+        padding:20px;
+    }
+    nav ul{
+        margin-top: 10px;
+    }
+    .banner{
+        padding: 20px;
+    }
+    .banner-content{
+        padding: 0;
+    }
+    .btn-primary{
+        margin-bottom: 10px;
+    }
+}
